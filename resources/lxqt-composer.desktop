@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+TryExec=xcompmgr
+Exec=/data/data/com.termux/files/var/lib/lxqt-compositor/lxqt-compositor.sh --use-xorg
+X-LXQt-Module=true
+Name=lxqt-compositor

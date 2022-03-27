@@ -1,0 +1,8 @@
+[Desktop Entry]
+Exec=lxqt-composer-settings
+Terminal=false
+Type=Application
+Icon=preferences-desktop-display
+Categories=Settings;DesktopSettings;Qt;LXQt;DisplaySettings;
+Name=Compositor Settings
+Comment=Configure default display compositor
