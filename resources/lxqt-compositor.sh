@@ -20,11 +20,11 @@ XORG_ARGS="-C -n"
 
 if [ $@ == "--use-picom" ]; then
     picom -b --config $ROOT_DIR/picom.conf &
-    sed -i 's|Exec=$ROOT_DIR/lxqt-compositor.sh --use-xorg|Exec=$ROOT_DIR/lxqt-compositor.sh --use-picom|g' $PREFIX/etc/xdg/autostart/lxqt-composer.desktop 2> /dev/null
+    sed -i 's|Exec=/data/data/com.termux/files/usr/var/lib/lxqt-compositor/lxqt-compositor.sh --use-xorg|Exec=/data/data/com.termux/files/usr/var/lib/lxqt-compositor/lxqt-compositor.sh --use-picom|g' $PREFIX/etc/xdg/autostart/lxqt-composer.desktop 2> /dev/null
 
 elif [ $@ == "--use-xorg" ]; then
     xcompmgr $XORG_ARGS
-    sed -i 's|Exec=$ROOT_DIR/lxqt-compositor.sh --use-picom|Exec=$ROOT_DIR/lxqt-compositor.sh --use-xorg|g' $PREFIX/etc/xdg/autostart/lxqt-composer.desktop 2> /dev/null
+    sed -i 's|Exec=/data/data/com.termux/files/usr/var/lib/lxqt-compositor/lxqt-compositor.sh --use-picom|Exec=/data/data/com.termux/files/usr/var/lib/lxqt-compositor/lxqt-compositor.sh --use-xorg|g' $PREFIX/etc/xdg/autostart/lxqt-composer.desktop 2> /dev/null
 
 elif [ $@ == "--picom-conf" ]; then
     $EDITOR $ROOT_DIR/picom.conf
