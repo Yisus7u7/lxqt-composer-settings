@@ -1,5 +1,7 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
+# Copyright 2022 Yisus7u7 <dev.yisus@hotmail.com>
+
 # Program settings
 
 EDITOR="featherpad"
